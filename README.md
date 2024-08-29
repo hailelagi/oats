@@ -1,16 +1,41 @@
 # oats
 
-A modern key/value store for anything that runs on the `BEAM`. `:ets` compatible, and more!
+A modern in-memory store for **anything** that runs on the BEAM. `:ets` api compatible, and more!
 
-core:
-- a new storage engine design
+## Getting started
+
+Via a livebook:
+```elixir
+Mix.install([:oats])
+```
+
+Via hex.pm in elixir:
+```elixir
+def deps do
+  [
+    {:oats, "~> 0.1.0"}
+  ]
+end
+```
+
+You should be able to find/replace `:ets` with `:oats` and it just works.
+
+## Interesting Features
 - transactions
+```
+```
 
-fun, nice things:
+- performance
+```
+```
+
+- ergonomic querying(dataframes and sql!):
+```
+```
+
+## Learn more
+
+- storage engine design
+- transactions
 - tightly integrated SIMD json manipulation
 - native object storage querying
-- sql!
-
-future:
-- disk snapshots
-- distribution/log shipping across beam nodes
