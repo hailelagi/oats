@@ -2,6 +2,11 @@
 
 A modern in-memory store for **anything** that runs on the BEAM. `:ets` api compatible, and more!
 
+## Usecases
+- Streaming realtime logs.
+- Ingestion and streaming queries.
+- Object storage snapshots.
+
 ## Getting started
 
 Via a livebook:
