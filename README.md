@@ -1,9 +1,10 @@
 # oats
 
-A modern in-memory store for **anything** that runs on the BEAM. `:ets` api compatible, and more!
+An in-process, object store native, streaming engine that runs on the BEAM :ets api and more!
 
-## Usecases
-- Streaming realtime logs.
+## Why
+
+- Streaming realtime logs and perform fast analytics.
 - Ingestion and streaming queries.
 - Object storage snapshots.
 
