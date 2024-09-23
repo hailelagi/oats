@@ -1,9 +1,16 @@
 [package]
 name = "oats"
 version = "0.1.0"
-edition = "2021"
+authors = []
+edition = "2018"
+
+[lib]
+name = "oats"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
 
 [dependencies]
+rustler = "0.24.0"
 anyhow = "1.0.79"
 arrow = "52.2.0"
 cargo-fuzz = "0.12.0"
@@ -17,5 +24,3 @@ hashbrown = "0.13"
 object_store = "0.11.0"
 proptest = "1.4.0"
 quickcheck = "1.0.3"
-zerocopy = "0.8.0-alpha"
-zerocopy-derive = "0.8.0-alpha"

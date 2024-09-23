@@ -1,12 +1,6 @@
 # oats
 
-An in-process, object store native, streaming engine that runs on the BEAM :ets api and more!
-
-## Why
-
-- Streaming realtime logs and perform fast analytics.
-- Ingestion and streaming queries.
-- Object storage snapshots.
+An in-process, streaming engine that runs on the BEAM!
 
 ## Getting started
 
@@ -44,4 +38,3 @@ You should be able to find/replace `:ets` with `:oats` and it just works.
 - storage engine design
 - transactions
 - tightly integrated SIMD json manipulation
-- native object storage querying
