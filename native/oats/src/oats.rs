@@ -7,7 +7,6 @@ pub mod duplicate_bag;
 pub mod ordered_set;
 pub mod set;
 
-
 pub trait Table: Send + Sync {
     fn insert(&self, process: value: Term, key_clash_fail: bool) -> Result<()>
 

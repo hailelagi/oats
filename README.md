@@ -18,7 +18,7 @@ def deps do
 end
 ```
 
-For some applications, `:oats` can be a drop in replacement for `:ets`, you should be able to find/replace `:ets` and it just works, if not please open an issue, a safety goal is to pass a rough equivalent of ets test suite.
+For some applications, `:oats` can be a drop in replacement for `:ets`, you should be able to find/replace `:ets` and it just works, if not please open an issue, a safety goal is to pass a rough equivalent of ets test suite and provide an explorer-like api.
 
 ## Interesting Features
 - transactions

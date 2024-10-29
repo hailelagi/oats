@@ -1,0 +1,9 @@
+<!-- livebook:{"persist_outputs":true} -->
+
+# Oats in Five Minutes
+
+```elixir
+Mix.install([
+  {:oats, "~> 0.10.0"},
+])
+```

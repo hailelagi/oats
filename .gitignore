@@ -26,9 +26,18 @@ oats-*.tar
 /tmp/
 
 /target
+
 /.idea
+
 /.vscode
+
 .DS_Store
+
 erl_crash.dump
+
 /docs/public
+
 .elixir_ls
+
+priv/native/liboats.so
+todo.txt
