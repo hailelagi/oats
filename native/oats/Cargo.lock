@@ -1935,7 +1935,6 @@ name = "oats"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "arrow",
  "cargo-fuzz",
  "criterion",
  "crossbeam",
