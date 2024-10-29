@@ -1,6 +1,6 @@
 # oats
 
-An in-process, streaming engine that runs on the BEAM!
+An in-memory key-value storage engine on the BEAM!
 
 ## Getting started
 
@@ -18,7 +18,7 @@ def deps do
 end
 ```
 
-You should be able to find/replace `:ets` with `:oats` and it just works.
+For some applications, `:oats` can be a drop in replacement for `:ets`, you should be able to find/replace `:ets` and it just works, if not please open an issue, a safety goal is to pass a rough equivalent of ets test suite.
 
 ## Interesting Features
 - transactions
@@ -33,8 +33,6 @@ You should be able to find/replace `:ets` with `:oats` and it just works.
 ```
 ```
 
-## Learn more
-
-- storage engine design
-- transactions
-- tightly integrated SIMD json manipulation
+- background automatic sync/refresh/materializing with postgres or s3/object storage:
+```
+```
