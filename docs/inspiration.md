@@ -15,3 +15,4 @@ Cool ideas, i either "stole", borrowed, modified, combined or found interesting.
 - http://nms.csail.mit.edu/~stavros/pubs/OLTP_sigmod08.pdf
 - https://www.vldb.org/pvldb/vol10/p781-Wu.pdf
 - https://stratos.seas.harvard.edu/sites/scholar.harvard.edu/files/stratos/files/rum.pdf
+- https://db.in.tum.de/~boettcher/locking.pdf

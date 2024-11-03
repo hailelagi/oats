@@ -1944,6 +1944,7 @@ dependencies = [
  "futures",
  "hashbrown 0.13.2",
  "object_store 0.11.0",
+ "parking_lot",
  "proptest",
  "quickcheck",
  "rustler",
