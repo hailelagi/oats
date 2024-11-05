@@ -40,4 +40,15 @@ erl_crash.dump
 .elixir_ls
 
 priv/native/liboats.so
+
 todo.txt
+
+docs/decisions.md
+
+docs/inspiration.md
+
+# erlang test suite
+/log
+
+priv/native/liboats.so
+

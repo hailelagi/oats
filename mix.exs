@@ -37,6 +37,11 @@ defmodule Oats.MixProject do
       {:dialyxir, "~> 1.1", only: :dev, runtime: false},
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       {:benchee, "~> 1.0", only: :dev},
+
+      # test stuff
+      {:cf, ">= 0.0.0", only: :test},
+      {:cth_readable, "~> 1.4.5", only: :test},
+      {:proper, "~> 1.4.0", only: :test}
     ]
   end
 end
