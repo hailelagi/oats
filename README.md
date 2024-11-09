@@ -25,17 +25,10 @@ For some applications, `:oats` can be a drop in replacement for `:ets`, you shou
 ```
 ```
 
-- performance
-```
-```
-
 - ergonomic querying(dataframes and sql!):
 ```
 ```
 
-- background automatic sync/refresh/materializing with postgres or s3/object storage:
-```
-```
 
 ## Running tests
 
