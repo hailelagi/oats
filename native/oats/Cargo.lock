@@ -432,6 +432,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 
 [[package]]
+name = "bincode"
+version = "1.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b1f45e9417d87227c7a56d22e471c6206462cba514c7590c09aff4cf6d1ddcad"
+dependencies = [
+ "serde",
+]
+
+[[package]]
 name = "bit-set"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -725,6 +734,15 @@ name = "colorchoice"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3fd119d74b830634cea2a0f58bbd0d54540518a14397557951e79340abc28c0"
+
+[[package]]
+name = "columnation"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "21ca68e419cae36821f2e1c9d62a25de900aad72e96b79c6f76eb47c65816d25"
+dependencies = [
+ "paste",
+]
 
 [[package]]
 name = "comfy-table"
@@ -1285,6 +1303,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "differential-dataflow"
+version = "0.13.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c437c8688c813b36da4823af3562607dca0bface950206afccec6bb8ef7f762b"
+dependencies = [
+ "fnv",
+ "serde",
+ "timely",
+]
+
+[[package]]
 name = "digest"
 version = "0.10.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1359,6 +1388,17 @@ checksum = "8add37afff2d4ffa83bc748a70b4b1370984f6980768554182424ef71447c35f"
 dependencies = [
  "bitflags 1.3.2",
  "rustc_version",
+]
+
+[[package]]
+name = "flatcontainer"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0ff185ea156496de196dfd189038982f480515ea3338f1ff0a4fbff1e52ea0a6"
+dependencies = [
+ "cfg-if",
+ "paste",
+ "serde",
 ]
 
 [[package]]
@@ -1498,6 +1538,15 @@ checksum = "85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a"
 dependencies = [
  "typenum",
  "version_check",
+]
+
+[[package]]
+name = "getopts"
+version = "0.2.21"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "14dbbfd5c71d70241ecf9e6f13737f7b5ce823821063188d7e46c41d371eebd5"
+dependencies = [
+ "unicode-width",
 ]
 
 [[package]]
@@ -1983,6 +2032,7 @@ dependencies = [
  "crossbeam-epoch",
  "dashmap 5.5.3",
  "datafusion",
+ "differential-dataflow",
  "futures",
  "hashbrown 0.13.2",
  "object_store 0.11.0",
@@ -2667,6 +2717,9 @@ name = "smallvec"
 version = "1.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3c5e1a9a646d36c3599cd173a41282daf47c44583ad367b8e6837255952e5c67"
+dependencies = [
+ "serde",
+]
 
 [[package]]
 name = "snafu"
@@ -2864,6 +2917,60 @@ dependencies = [
  "integer-encoding",
  "ordered-float",
 ]
+
+[[package]]
+name = "timely"
+version = "0.14.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7a4794ec27c59ae109928ce1273a16633d324268bca4538c7e40e6c4608b40a3"
+dependencies = [
+ "bincode",
+ "crossbeam-channel",
+ "getopts",
+ "serde",
+ "smallvec",
+ "timely_bytes",
+ "timely_communication",
+ "timely_container",
+ "timely_logging",
+]
+
+[[package]]
+name = "timely_bytes"
+version = "0.12.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1f8b724c58f1665ae4b5b0368d53b1ed140878707f06ca429f8504d712fe094e"
+
+[[package]]
+name = "timely_communication"
+version = "0.14.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0dad90c2eb029d4ed8d8c7f26c326b1ec86a5104d38e3ec94fdefdd995a944a5"
+dependencies = [
+ "byteorder",
+ "crossbeam-channel",
+ "getopts",
+ "serde",
+ "timely_bytes",
+ "timely_logging",
+]
+
+[[package]]
+name = "timely_container"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2ddfa4639c9390c6fac4ff66e47aa1bcfbc5f5bba6d520d5a7c55978165e7b14"
+dependencies = [
+ "columnation",
+ "flatcontainer",
+ "serde",
+]
+
+[[package]]
+name = "timely_logging"
+version = "0.12.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b73a034d62792b507397701ee660001c8ba3e9dbffce29bc7a25319a36ebaa86"
 
 [[package]]
 name = "tiny-keccak"
